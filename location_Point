@@ -1,0 +1,12 @@
+Map.setCenter(5.69, 52.251, 15);
+Map.setOptions('satellite')
+
+var poi = ee.Geometry.Point(5.69, 52.251);
+print(poi)
+
+var poi = ee.Geometry.Point(5.69, 52.251);
+print(poi)
+
+Map.addLayer(poi,{color: 'blue'}, "Blue")
+Map.addLayer(poi,{color: 'green'}, "Green")
+Map.addLayer(poi,{color: 'red'}, "Red")
